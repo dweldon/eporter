@@ -1,6 +1,3 @@
-%
-% porter.erl
-%
 % Porter Stemming Algorithm Implementation in Erlang  
 %
 % Alden Dima (alden.dima@nist.gov)
@@ -38,13 +35,12 @@
 % of the textual description of the algorithm.
 %
 % Thanks to Paul Black for his helpful comments.
-%
 
--module(porter).
+-module(eporter).
 
 -export([stem/1, stem_file/2]).
 
--import(conditions, [measure/1, ends_with/2, has_vowel/1,
+-import(eporter_conditions, [measure/1, ends_with/2, has_vowel/1,
         ends_with_double_cons/1, ends_with_cvc/1]).
 
 -import(lists, [reverse/1]).
@@ -67,7 +63,7 @@ stem_lines(S_in, S_out) ->
 
 %
 % This function serves as the "main" function - call it via the
-% Erlang shell as: porter:stem_file("input_file", "output_file").
+% Erlang shell as: eporter:stem_file("input_file", "output_file").
 % where input_file and output_file are replaced with the appropriate
 % local file names. Note: I assume that all words are already in
 % lower case.

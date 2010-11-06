@@ -1,6 +1,3 @@
-%
-% conditions.erl
-%
 % Porter Stemming Algorithm Implementation in Erlang  
 %
 % Alden Dima (alden.dima@nist.gov)
@@ -30,7 +27,7 @@
 % of the Porter Stemming algorithm.
 %
 
--module(conditions).
+-module(eporter_conditions).
 
 -export([measure/1, ends_with/2, has_vowel/1, ends_with_double_cons/1,
         ends_with_cvc/1]).
