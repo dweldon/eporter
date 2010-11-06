@@ -1,0 +1,5 @@
+{application, eporter,
+ [{description, "porter stemmer"},
+  {vsn, "0.1"},
+  {registered, []},
+  {applications, [kernel, stdlib]}]}.

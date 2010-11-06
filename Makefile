@@ -1,4 +1,9 @@
-compile: 
-	erl -make
+REBAR := ./rebar
+
+.PHONY: all clean
+
+all:
+	$(REBAR) compile
+
 clean:
-	rm -rf ebin/*.beam
+	$(REBAR) clean
