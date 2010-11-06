@@ -1,7 +1,0 @@
-This is a copy of Alden Dima's erlang implementation of the porter stemming
-algorithm from here: http://tartarus.org/~martin/PorterStemmer
-
-supported functions:
-
-porter:stem(String)
-porter:stem_file(In_file, Out_file)
